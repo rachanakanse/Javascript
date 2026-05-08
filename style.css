@@ -1,0 +1,39 @@
+body {
+  background: black;
+  color: red;
+  text-align: center;
+  font-family: Arial;
+}
+
+#gameArea {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background: #111;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Torch */
+.light {
+  background: radial-gradient(circle, rgba(255,255,255,0.25) 20%, black 70%);
+}
+
+/* Ghost */
+.ghost {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url('https://i.pinimg.com/originals/8f/05/7a/8f057ae1749095271e21c0d81fbbfb4f.gif') no-repeat center/cover;
+}
+
+/* Shadow */
+.shadow {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: rgba(0,0,0,0.5);
+  filter: blur(20px);
+  border-radius: 50%;
+}
